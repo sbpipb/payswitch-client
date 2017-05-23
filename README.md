@@ -22,8 +22,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+Payswitch.configure do |config|
+  config.mode = :production
+  config.api_username = 'xxxx@xxxx.xxx'
+  config.api_token = 'authtoken'
+end
+```
 
+Payswitch::Helper.authentication_headers
+Payswitch::Api::Users.current_user
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
