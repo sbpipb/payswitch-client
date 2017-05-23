@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["jvlivnmvcmvng"]
   spec.email         = ["julianmacmang@gmail.com"]
 
-  spec.summary       = %q{Gem for Payswitch API Wrapper}
-  spec.description   = %q{Integration to Payswitch.net}
+  spec.summary       = %q{Payswitch API Wrapper}
+  spec.description   = %q{Payswitch API Wrapper}
   spec.homepage      = 'http://github.com/sbpipb/payswitch'
   spec.license       = "MIT"
 
