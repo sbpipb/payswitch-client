@@ -8,10 +8,11 @@ module Payswitch
     def base_url
       case mode
       when :production
-        PROD_BASE_URL
+        then PROD_BASE_URL
       when :staging
-        STAGING_BASE_URL
+        then STAGING_BASE_URL
       when :development
+        then DEV_BASE_URL
       else
         DEV_BASE_URL
       end

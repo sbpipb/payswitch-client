@@ -1,5 +1,6 @@
 require 'payswitch/configuration'
 require 'payswitch/version'
+require 'payswitch/helper'
 # require 'payswitch/api'
 require 'payswitch/api/users'
 module Payswitch
