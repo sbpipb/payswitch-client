@@ -1,16 +1,18 @@
-require 'payswitch/version'
 require 'payswitch/configuration'
+require 'payswitch/version'
+# require 'payswitch/api'
+require 'payswitch/api/users'
 module Payswitch
   # Your code goes here...
   class << self
     attr_accessor :configuration
   end
 
-  def self.configuration
+  def self.config
     @configuration ||= Configuration.new
   end
 
-  def self.config
+  def self.configure
     yield(config)
   end
 end

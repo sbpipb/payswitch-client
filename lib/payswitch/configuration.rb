@@ -3,10 +3,10 @@ module Payswitch
     PROD_BASE_URL = 'https://payswitch.net'.freeze
     STAGING_BASE_URL = 'https://staging.payswitch.net'.freeze
     DEV_BASE_URL = 'https://try.payswitch.net'.freeze
-    attr_accessor :environment, :api_username, :api_token, :api_password
+    attr_accessor :mode, :api_username, :api_token, :api_password
 
     def base_url
-      case environment
+      case mode
       when :production
         PROD_BASE_URL
       when :staging
@@ -17,8 +17,8 @@ module Payswitch
       end
     end
 
-    def environment
-      @environment ||= :development
+    def mode
+      @mode ||= :development
     end
   end
 end
